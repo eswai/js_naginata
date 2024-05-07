@@ -46,6 +46,9 @@
                 case '<Backspace>':
                     ngtext = ngtext.substring(0, selectionStart - 1) + ngtext.substring(selectionEnd);
                     return -1;
+                case '<Delete>':
+                    ngtext = ngtext.substring(0, selectionStart) + ngtext.substring(selectionEnd + 1);
+                    return 0;
                 case '<Up>':
                     return -1;
                 case '<Down>':

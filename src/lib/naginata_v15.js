@@ -181,67 +181,67 @@ const ngdic = [
     [  new Set(['j', 'k'])   , new Set([ 'd'                   ]), ['？'   ]], // ？{改行}
     [  new Set(['j', 'k'])   , new Set([ 'c'                   ]), ['！'   ]], // ！{改行}
 
-//     ({ KC.NGJ, KC.NGK    }, { KC.NGQ    }, [ KC.LGUI(KC.DOWN)                                   ]), // ^{End}
-//     ({ KC.NGJ, KC.NGK    }, { KC.NGW    }, [ unicode_string_sequence('『』'), KC.UP             ]), // 『』{改行}{↑}
+    [  new Set(['j', 'k'])   , new Set([ 'q'                   ]), [                               ]], // ^{End}
+    [  new Set(['j', 'k'])   , new Set([ 'w'                   ]), ['『』', '<Left>'               ]], // 『』{改行}{↑}
     [  new Set(['j', 'k'])   , new Set([ 'e'                   ]), ['でぃ'                         ]], // /*ディ*/
-//     ({ KC.NGJ, KC.NGK    }, { KC.NGR    }, [ KC.LGUI(KC.S)                                      ]), // ^s
+    [  new Set(['j', 'k'])   , new Set([ 'r'                   ]), [                               ]], // ^s
     [  new Set(['j', 'k'])   , new Set([ 't'                   ]), ['・'                           ]], // ・
     [  new Set(['j', 'k'])   , new Set([ 'a'                   ]), ['……'                         ]], // ……{改行}
-//     ({ KC.NGJ, KC.NGK    }, { KC.NGS    }, [ unicode_string_sequence('()'), KC.UP               ]), // (){改行}{↑}
-    [  new Set(['j', 'k'])   , new Set([ 'f'                   ]), ['「」', '<Left>'               ]], // // 「」{改行}{↑}
-//     ({ KC.NGJ, KC.NGK    }, { KC.NGG    }, [ unicode_string_sequence('《》'), KC.UP             ]), // 《》{改行}{↑}
-//     ({ KC.NGJ, KC.NGK    }, { KC.NGZ    }, [ unicode_string_sequence('――')                    ]), // ――{改行}
-//     ({ KC.NGJ, KC.NGK    }, { KC.NGX    }, [ unicode_string_sequence('【】'), KC.UP             ]), // 【】{改行}{↑}
-//     ({ KC.NGJ, KC.NGK    }, { KC.NGV    }, [ KC.ENT, KC.DOWN                                    ]), // {改行}{↓}
-//     ({ KC.NGJ, KC.NGK    }, { KC.NGB    }, [ KC.ENT, KC.LEFT                                    ]), // {改行}{←}
+    [  new Set(['j', 'k'])   , new Set([ 's'                   ]), ['()', '<Left>'                 ]], // (){改行}{↑}
+    [  new Set(['j', 'k'])   , new Set([ 'f'                   ]), ['「」', '<Left>'               ]], // 「」{改行}{↑}
+    [  new Set(['j', 'k'])   , new Set([ 'g'                   ]), ['《》', '<Left>'               ]], // 《》{改行}{↑}
+    [  new Set(['j', 'k'])   , new Set([ 'z'                   ]), ['――'                         ]], // ――{改行}
+    [  new Set(['j', 'k'])   , new Set([ 'x'                   ]), ['【】', '<Left>'               ]], // 【】{改行}{↑}
+    [  new Set(['j', 'k'])   , new Set([ 'v'                   ]), ['\n', '<Left>'                 ]], // {改行}{↓}
+    [  new Set(['j', 'k'])   , new Set([ 'b'                   ]), ['\n', '<Left>'                 ]], // {改行}{←}
 
-//     ({ KC.NGD, KC.NGF    }, { KC.NGY    }, [ KC.LCTL(KC.A)                                      ]), // {Home}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGU    }, [ KC.LSFT(KC.LCTL(KC.E)), KC.BSPC                    ]), // +{End}{BS}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGI    }, [ KC.LANG1, KC.LANG1                                 ]), // {vk1Csc079}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGO    }, [ KC.DEL                                             ]), // {Del}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGP    }, [ KC.ESC, KC.ESC, KC.ESC                             ]), // {Esc 3}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGH    }, [ KC.ENT, KC.LCTL(KC.E)                              ]), // {Enter}{End}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGJ    }, [ KC.UP                                              ]), // {↑}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGK    }, [ KC.LSFT(KC.UP)                                     ]), // +{↑}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGL    }, [ KC.LSFT(KC.UP)] * 7                                 ), // +{↑ 7}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGSCLN }, [ KC.LCTL(KC.K)                                      ]), // ^i
-//     ({ KC.NGD, KC.NGF    }, { KC.NGN    }, [ KC.LCTL(KC.E)                                      ]), // {End}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGM    }, [ KC.DOWN                                            ]), // {↓}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGCOMM }, [ KC.LSFT(KC.DOWN)                                   ]), // +{↓}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGDOT  }, [ KC.LSFT(KC.DOWN)] * 7                               ), // +{↓ 7}
-//     ({ KC.NGD, KC.NGF    }, { KC.NGSLSH }, [ KC.LCTL(KC.J)                                      ]), // ^u
+    [  new Set(['d', 'f'])   , new Set([ 'y'                   ]), [                               ]], // {Home}
+    [  new Set(['d', 'f'])   , new Set([ 'u'                   ]), [                               ]], // +{End}{BS}
+    [  new Set(['d', 'f'])   , new Set([ 'i'                   ]), [                               ]], // {vk1Csc079}
+    [  new Set(['d', 'f'])   , new Set([ 'o'                   ]), ['<Delete>'                     ]], // {Del}
+    [  new Set(['d', 'f'])   , new Set([ 'p'                   ]), [                               ]], // {Esc 3}
+    [  new Set(['d', 'f'])   , new Set([ 'h'                   ]), [                               ]], // {Enter}{End}
+    [  new Set(['d', 'f'])   , new Set([ 'j'                   ]), ['<Left>'                       ]], // {↑}
+    [  new Set(['d', 'f'])   , new Set([ 'k'                   ]), [                               ]], // +{↑}
+    [  new Set(['d', 'f'])   , new Set([ 'l'                   ]), [                               ]], // +{↑ 7}
+    [  new Set(['d', 'f'])   , new Set([ 'b'                   ]), [                               ]], // ^i
+    [  new Set(['d', 'f'])   , new Set([ 'n'                   ]), [                               ]], // {End}
+    [  new Set(['d', 'f'])   , new Set([ 'm'                   ]), ['<Right>'                      ]], // {↓}
+    [  new Set(['d', 'f'])   , new Set([ ','                   ]), [                               ]], // +{↓}
+    [  new Set(['d', 'f'])   , new Set([ '.'                   ]), [                               ]], // +{↓ 7}
+    [  new Set(['d', 'f'])   , new Set([ '/'                   ]), [                               ]], // ^u
 
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGQ    }, [ KC.LCTL(KC.A), KC.RIGHT, KC.LCTL(KC.E), KC.DEL, KC.DEL, KC.DEL, KC.DEL, KC.LEFT ]), // {Home}{→}{End}{Del 4}{←}
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGW    }, [ KC.LGUI(KC.X), unicode_string_sequence('『'), KC.LGUI(KC.V), unicode_string_sequence('』'), KC.SPC, KC.LSFT(KC.UP), KC.LGUI(KC.X)]), // ^x『^v』{改行}{Space}+{↑}^x
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGE    }, [ KC.LCTL(KC.A), KC.ENT, KC.SPC, KC.SPC, KC.SPC, KC.LEFT ]), // {Home}{改行}{Space 3}{←}
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGR    }, [ KC.SPC, KC.SPC, KC.SPC                             ]), // {Space 3}
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGT    }, [ unicode_string_sequence('〇')                      ]), // 〇{改行}
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGA    }, [ KC.LCTL(KC.A), KC.RIGHT, KC.LCTL(KC.E), KC.DEL, KC.DEL, KC.LEFT ]), // {Home}{→}{End}{Del 2}{←}
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGS    }, [ KC.LGUI(KC.X), unicode_string_sequence('('), KC.LGUI(KC.V), unicode_string_sequence(')'), KC.SPC, KC.LSFT(KC.UP), KC.LGUI(KC.X)]), // ^x(^v){改行}{Space}+{↑}^x
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGD    }, [ KC.LCTL(KC.A), KC.ENT, KC.SPC, KC.LEFT             ]), // {Home}{改行}{Space 1}{←}
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGF    }, [ KC.LGUI(KC.X), unicode_string_sequence('「'), KC.LGUI(KC.V), unicode_string_sequence('」'), KC.SPC, KC.LSFT(KC.UP), KC.LGUI(KC.X)]), // ^x「^v」{改行}{Space}+{↑}^x
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGG    }, [ KC.LGUI(KC.X), unicode_string_sequence('｜'), KC.LGUI(KC.V), unicode_string_sequence('《》'), KC.UP, KC.SPC, KC.LSFT(KC.UP), KC.LGUI(KC.X)]), // ^x｜{改行}^v《》{改行}{↑}{Space}+{↑}^x
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGZ    }, [ unicode_string_sequence('　　　×　　　×　　　×'), KC.ENT]), // 　　　×　　　×　　　×{改行 2}
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGX    }, [ KC.LGUI(KC.X), unicode_string_sequence('【'), KC.LGUI(KC.V), unicode_string_sequence('】'), KC.SPC, KC.LSFT(KC.UP), KC.LGUI(KC.X)]), // ^x【^v】{改行}{Space}+{↑}^x
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGC    }, [ unicode_string_sequence('／')                      ]), // ／{改行}
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGV    }, [ KC.ENT, KC.LCTL(KC.E), unicode_string_sequence('「」'), KC.UP]), // {改行}{End}{改行}「」{改行}{↑}
-//     ({ KC.NGM, KC.NGCOMM }, { KC.NGB    }, [ KC.ENT, KC.LCTL(KC.E), KC.ENT, KC.SPC              ]), // {改行}{End}{改行}{Space}
+    [  new Set(['m', ','])   , new Set([ 'q'                   ]), [                               ]], // {Home}{→}{End}{Del 4}{←}
+    [  new Set(['m', ','])   , new Set([ 'w'                   ]), [                               ]], // ^x『^v』{改行}{Space}+{↑}^x
+    [  new Set(['m', ','])   , new Set([ 'e'                   ]), [                               ]], // {Home}{改行}{Space 3}{←}
+    [  new Set(['m', ','])   , new Set([ 'r'                   ]), ['　　　'                        ]], // {Space 3}
+    [  new Set(['m', ','])   , new Set([ 't'                   ]), ['〇'                           ]], // 〇{改行}
+    [  new Set(['m', ','])   , new Set([ 'a'                   ]), [                               ]], // {Home}{→}{End}{Del 2}{←}
+    [  new Set(['m', ','])   , new Set([ 's'                   ]), [                               ]], // ^x(^v){改行}{Space}+{↑}^x
+    [  new Set(['m', ','])   , new Set([ 'd'                   ]), [                               ]], // {Home}{改行}{Space 1}{←}
+    [  new Set(['m', ','])   , new Set([ 'f'                   ]), [                               ]], // ^x「^v」{改行}{Space}+{↑}^x
+    [  new Set(['m', ','])   , new Set([ 'g'                   ]), [                               ]], // ^x｜{改行}^v《》{改行}{↑}{Space}+{↑}^x
+    [  new Set(['m', ','])   , new Set([ 'z'                   ]), ['　　　×　　　×　　　×', '\n' ]], // 　　　×　　　×　　　×{改行 2}
+    [  new Set(['m', ','])   , new Set([ 'x'                   ]), [                               ]], // ^x【^v】{改行}{Space}+{↑}^x
+    [  new Set(['m', ','])   , new Set([ 'c'                   ]), ['／'                           ]], // ／{改行}
+    [  new Set(['m', ','])   , new Set([ 'v'                   ]), [                               ]], // {改行}{End}{改行}「」{改行}{↑}
+    [  new Set(['m', ','])   , new Set([ 'b'                   ]), [                               ]], // {改行}{End}{改行}{Space}
 
-//     ({ KC.NGC, KC.NGV    }, { KC.NGY    }, [ KC.LSFT(KC.LCTL(KC.A))                             ]), // +{Home}
-//     ({ KC.NGC, KC.NGV    }, { KC.NGU    }, [ KC.LGUI(KC.X)                                      ]), // ^x
-//     ({ KC.NGC, KC.NGV    }, { KC.NGI    }, [ KC.LGUI(KC.V)                                      ]), // ^v
-//     ({ KC.NGC, KC.NGV    }, { KC.NGO    }, [ KC.LSFT(KC.LGUI(KC.Z))                             ]), // ^y
-//     ({ KC.NGC, KC.NGV    }, { KC.NGP    }, [ KC.LGUI(KC.Z)                                      ]), // ^z
-//     ({ KC.NGC, KC.NGV    }, { KC.NGH    }, [ KC.LGUI(KC.C)                                      ]), // ^c
-//     ({ KC.NGC, KC.NGV    }, { KC.NGJ    }, [ KC.RIGHT                                           ]), // {→}
-//     ({ KC.NGC, KC.NGV    }, { KC.NGK    }, [ KC.LSFT(KC.RIGHT)                                  ]), // +{→}
-//     ({ KC.NGC, KC.NGV    }, { KC.NGL    }, [ KC.LSFT(KC.RIGHT)] * 5                              ), // +{→ 5}
-//     ({ KC.NGC, KC.NGV    }, { KC.NGSCLN }, [ KC.LSFT(KC.RIGHT)] * 20                             ), // +{→ 20}
-//     ({ KC.NGC, KC.NGV    }, { KC.NGN    }, [ KC.LSFT(KC.LCTL(KC.E))                             ]), // +{End}
-//     ({ KC.NGC, KC.NGV    }, { KC.NGM    }, [ KC.LEFT                                            ]), // {←}
-//     ({ KC.NGC, KC.NGV    }, { KC.NGCOMM }, [ KC.LSFT(KC.LEFT)                                   ]), // +{←}
-//     ({ KC.NGC, KC.NGV    }, { KC.NGDOT  }, [ KC.LSFT(KC.LEFT)] * 5                               ), // +{← 5}
-//     ({ KC.NGC, KC.NGV    }, { KC.NGSLSH }, [ KC.LSFT(KC.LEFT)] * 20                              ), // +{← 20}
+    [  new Set(['m', ','])   , new Set([ 'y'                   ]), [                               ]], // +{Home}
+    [  new Set(['m', ','])   , new Set([ 'u'                   ]), [                               ]], // ^x
+    [  new Set(['m', ','])   , new Set([ 'i'                   ]), [                               ]], // ^v
+    [  new Set(['m', ','])   , new Set([ 'o'                   ]), [                               ]], // ^y
+    [  new Set(['m', ','])   , new Set([ 'p'                   ]), [                               ]], // ^z
+    [  new Set(['m', ','])   , new Set([ 'h'                   ]), [                               ]], // ^c
+    [  new Set(['m', ','])   , new Set([ 'j'                   ]), ['Right'                        ]], // {→}
+    [  new Set(['m', ','])   , new Set([ 'k'                   ]), [                               ]], // +{→}
+    [  new Set(['m', ','])   , new Set([ 'l'                   ]), [                               ]], // +{→ 5}
+    [  new Set(['m', ','])   , new Set([ ';'                   ]), [                               ]], // +{→ 20}
+    [  new Set(['m', ','])   , new Set([ 'n'                   ]), [                               ]], // +{End}
+    [  new Set(['m', ','])   , new Set([ 'm'                   ]), ['Left'                         ]], // {←}
+    [  new Set(['m', ','])   , new Set([ ','                   ]), [                               ]], // +{←}
+    [  new Set(['m', ','])   , new Set([ '.'                   ]), [                               ]], // +{← 5}
+    [  new Set(['m', ','])   , new Set([ '/'                   ]), [                               ]], // +{← 20}
 
 ];
 
