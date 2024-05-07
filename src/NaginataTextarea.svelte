@@ -1,22 +1,26 @@
 <script>
-    import { ngpress, ngrelease } from "$lib/naginata_v15.js";
+    import { ngpress, ngrelease } from "$lib/naginata_v15";
 
     let ngtext = '';
     let lastCharacter = '';
 
     function keyPress(event) {
+        // キーリビート対策
         if (event.key == lastCharacter) {
             return;
         }
+        // カーソル位置
         let ss = this.selectionStart;
         let se = this.selectionEnd;
+
         const kana = ngpress(event.key);
         console.log(kana);
         for (const k of kana) {
             const l = typeText(k, ss, se);
             ss += l;
             se += l;
-            this.setSelectionRange(ss, ss);
+            // setTimeoutしないとBSがおかしかった(Firefox)
+            setTimeout(()=>this.setSelectionRange(ss, ss));
         }
         lastCharacter = event.key;
     }
@@ -24,13 +28,14 @@
     function keyRelease(event) {
         let ss = this.selectionStart;
         let se = this.selectionEnd;
+
         const kana = ngrelease(event.key);
         console.log(kana);
         for (const k of kana) {
             const l = typeText(k, ss, se);
             ss += l;
             se += l;
-            this.setSelectionRange(ss, ss);
+            setTimeout(()=>this.setSelectionRange(ss, ss));
         }
         lastCharacter = '';
     }
