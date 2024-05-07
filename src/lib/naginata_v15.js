@@ -259,7 +259,7 @@ function isSubset(set, superset) {
 }
 
 function isEqual(setA, setB) {
-    return isSuperset(setA, setB) && isSubset(setA, setB);
+    return setA.size === setB.size && [...setA].every((x) => setB.has(x));
 }
 
 function union(setA, setB) {
@@ -271,10 +271,10 @@ function union(setA, setB) {
 }
 
 // かな変換の処理
-function ngpress(kc) {
-    console.log('key press   : ' + kc);
-    if (!mask_keys.includes(kc)) return '';
-    pressed_keys.add(kc);
+function ngpress(keycode) {
+    console.log('key press   : ' + keycode);
+    if (!mask_keys.includes(keycode)) return [];
+    pressed_keys.add(keycode);
 
     let i = nginput.length - 1;
     let j = -1;
@@ -283,30 +283,23 @@ function ngpress(kc) {
     }
 
     // 後置シフトはしない
-    if (kc == ' ') {
-        nginput.push([kc]);
+    if (keycode == ' ') {
+        nginput.push([keycode]);
     // 前のキーとの同時押しの可能性があるなら前に足す
     // 同じキー連打を除外
     // V, H, EでVHがロールオーバーすると「こくて」=[[V,H], [E]]になる。「こりゃ」は[[V],[H,E]]。
-    } else if (nginput.length > 0 && nginput[i][j] != kc && number_of_candidates(nginput[i].concat([kc])) > 0) {
-        nginput[i].push(kc);
+    } else if (nginput.length > 0 && nginput[i][j] != keycode && number_of_candidates(nginput[i].concat([keycode])) > 0) {
+        nginput[i].push(keycode);
     // 前のキーと同時押しはない
     } else {
-        nginput.push([kc]);
+        nginput.push([keycode]);
     }
 
     // 連続シフトする
-    // がある　がる x (JIの組み合わせがあるからJがC/Oされる) strictモードを作る
-    // あいあう　あいう x
-    // ぎょあう　ぎょう x
-    // どか どが x 先にFがc/oされてJが残される
     i = nginput.length - 1;
     for (const rs of [['d', 'f'], ['c', 'v'], ['j', 'k'], ['m', ','], [' '], ['f'], ['v'], ['j'], ['m']]) {
         const rskc = rs.concat(nginput[i]);
-        // rskc.push(kc)
-        // じょじょ よを先に押すと連続シフトしない x
-        // Falseにすると、がる が　がある になる x
-        if (rs.includes(kc) == false && isSubset(new Set(rs), pressed_keys) && number_of_matches(rskc) > 0) {
+        if (rs.includes(keycode) == false && isSubset(new Set(rs), pressed_keys) && number_of_matches(rskc) > 0) {
             nginput[i] = rskc;
             break;
         }
@@ -320,10 +313,10 @@ function ngpress(kc) {
 }
 
 
-function ngrelease(kc) {
-    console.log('key release : ' + kc);
-    if (!mask_keys.includes(kc)) return '';
-    pressed_keys.delete(kc);
+function ngrelease(keycode) {
+    console.log('key release : ' + keycode);
+    if (!mask_keys.includes(keycode)) return [];
+    pressed_keys.delete(keycode);
 
     // 全部キーを離したらバッファを全部吐き出す
     if (pressed_keys.size == 0) {
@@ -341,9 +334,9 @@ function ngtype(keys) {
     if (keys.length == 0) {
         return [];
     }
-    console.log(nginput);
+    // console.log(nginput);
 
-    let skc = new Set(keys);
+    const skc = new Set(keys);
     for (const k of ngdic) {
         if (isEqual(skc, union(k[0], k[1]))) {
             return k[2];
@@ -379,9 +372,9 @@ function number_of_matches(keys) {
         }
     }
     for (const rs of [['d', 'f'], ['c', 'v'], ['j', 'k'], ['m', ',']]) {
-        if (keys.size == 3 && isEqual(new Set(keys.slice(0, 2)), new Set(rs))) {
+        if (keys.length == 3 && isEqual(new Set(keys.slice(0, 2)), new Set(rs))) {
             for (const k of ngdic) {
-                if (isEqual(k[0], new Set(rs)) && isEqual(k[1], new Set(keys[2]))) {
+                    if (isEqual(k[0], new Set(rs)) && isEqual(k[1], new Set(keys[2]))) {
                     noc = 1;
                     return noc;
                 }
@@ -426,7 +419,7 @@ function number_of_candidates(keys) {
         }
     }
     for (const rs of [['d', 'f'], ['c', 'v'], ['j', 'k'], ['m', ',']]) {
-        if (keys.size == 3 && isEqual(new Set(keys.slice(0, 2)), new Set(rs))) {
+        if (keys.length == 3 && isEqual(new Set(keys.slice(0, 2)), new Set(rs))) {
             for (const k of ngdic) {
                 if (isEqual(k[0], new Set(rs)) && isEqual(k[1], new Set(keys[2]))) {
                     noc = 1;
