@@ -73,6 +73,7 @@
     on:keydown|preventDefault={keyPress}
     on:keyup|preventDefault={keyRelease}
     placeholder="入力してみよう"
+    style="ime-mode: inactive"
     autofocus
 >{ngtext}</textarea>
 {:else}
@@ -80,6 +81,7 @@
     rows="5"
     on:keydown|preventDefault={keyPress}
     on:keyup|preventDefault={keyRelease}
+    style="ime-mode: inactive"
     placeholder="入力してみよう"
 >{ngtext}</textarea>
 {/if}
