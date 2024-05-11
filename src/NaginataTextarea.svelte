@@ -70,7 +70,6 @@
 {#if autofocus}
 <textarea
     rows="5"
-    cols="60"
     on:keydown|preventDefault={keyPress}
     on:keyup|preventDefault={keyRelease}
     placeholder="入力してみよう"
@@ -79,7 +78,6 @@
 {:else}
 <textarea
     rows="5"
-    cols="60"
     on:keydown|preventDefault={keyPress}
     on:keyup|preventDefault={keyRelease}
     placeholder="入力してみよう"
