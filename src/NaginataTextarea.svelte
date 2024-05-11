@@ -1,6 +1,7 @@
 <script>
     import { ngpress, ngrelease } from "$lib/naginata_v15";
     
+    export let autofocus = false;
     let ngtext = '';
     let lastCharacter = '';
 
@@ -66,6 +67,16 @@
     }
 </script>
 
+{#if autofocus}
+<textarea
+    rows="5"
+    cols="60"
+    on:keydown|preventDefault={keyPress}
+    on:keyup|preventDefault={keyRelease}
+    placeholder="入力してみよう"
+    autofocus
+>{ngtext}</textarea>
+{:else}
 <textarea
     rows="5"
     cols="60"
@@ -73,3 +84,4 @@
     on:keyup|preventDefault={keyRelease}
     placeholder="入力してみよう"
 >{ngtext}</textarea>
+{/if}

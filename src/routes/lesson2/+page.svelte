@@ -24,7 +24,7 @@
 です　あるです　ないです　ずるい
 </code></pre>
   
-  <NaginataTextarea/>
+  <NaginataTextarea autofocus/>
   
   <p>
     薙刀式の同時押しは、「Ａを押しながらＢを押しても、Ｂを押しながらＡを押してもＯＫ」の方式（相互シフト）です。
@@ -35,7 +35,7 @@
 ずかずか　ずるずる　かてる　かてない　でる　でない
 </code></pre>
     
-    <NaginataTextarea/>
+  <NaginataTextarea/>
     
   </section>
   

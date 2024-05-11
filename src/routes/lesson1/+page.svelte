@@ -20,7 +20,7 @@
 あるあるある　ないないない　するするする
 </code></pre>
 
-<NaginataTextarea/>
+<NaginataTextarea autofocus/>
 
 </section>
 
