@@ -20,6 +20,7 @@
 あるあるある　ないないない　するするする
 </code></pre>
 
+<p>英字モードにして入力してください</p>
 <NaginataTextarea autofocus/>
 
 </section>
