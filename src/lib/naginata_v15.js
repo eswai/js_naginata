@@ -7,7 +7,7 @@ const mask_keys = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', '
 const ngdic = [
     //  前置シフト      同時押し                        かな
     [  new Set()             , new Set([ 'u'                   ]), ['<Backspace>']],
-    [  new Set()             , new Set([ ' '                   ]), [' '          ]],
+    [  new Set()             , new Set([ ' '                   ]), ['　'          ]],
     [  new Set()             , new Set([ 'm', 'v'              ]), ['\n'         ]],
     [  new Set()             , new Set([ 't'                   ]), ['<Left>'     ]],
     [  new Set()             , new Set([ 'y'                   ]), ['<Right>'    ]],
@@ -227,21 +227,21 @@ const ngdic = [
     [  new Set(['m', ','])   , new Set([ 'v'                   ]), [                               ]], // {改行}{End}{改行}「」{改行}{↑}
     [  new Set(['m', ','])   , new Set([ 'b'                   ]), [                               ]], // {改行}{End}{改行}{Space}
 
-    [  new Set(['m', ','])   , new Set([ 'y'                   ]), [                               ]], // +{Home}
-    [  new Set(['m', ','])   , new Set([ 'u'                   ]), [                               ]], // ^x
-    [  new Set(['m', ','])   , new Set([ 'i'                   ]), [                               ]], // ^v
-    [  new Set(['m', ','])   , new Set([ 'o'                   ]), [                               ]], // ^y
-    [  new Set(['m', ','])   , new Set([ 'p'                   ]), [                               ]], // ^z
-    [  new Set(['m', ','])   , new Set([ 'h'                   ]), [                               ]], // ^c
-    [  new Set(['m', ','])   , new Set([ 'j'                   ]), ['Right'                        ]], // {→}
-    [  new Set(['m', ','])   , new Set([ 'k'                   ]), [                               ]], // +{→}
-    [  new Set(['m', ','])   , new Set([ 'l'                   ]), [                               ]], // +{→ 5}
-    [  new Set(['m', ','])   , new Set([ ';'                   ]), [                               ]], // +{→ 20}
-    [  new Set(['m', ','])   , new Set([ 'n'                   ]), [                               ]], // +{End}
-    [  new Set(['m', ','])   , new Set([ 'm'                   ]), ['Left'                         ]], // {←}
-    [  new Set(['m', ','])   , new Set([ ','                   ]), [                               ]], // +{←}
-    [  new Set(['m', ','])   , new Set([ '.'                   ]), [                               ]], // +{← 5}
-    [  new Set(['m', ','])   , new Set([ '/'                   ]), [                               ]], // +{← 20}
+    [  new Set(['c', 'v'])   , new Set([ 'y'                   ]), [                               ]], // +{Home}
+    [  new Set(['c', 'v'])   , new Set([ 'u'                   ]), [                               ]], // ^x
+    [  new Set(['c', 'v'])   , new Set([ 'i'                   ]), [                               ]], // ^v
+    [  new Set(['c', 'v'])   , new Set([ 'o'                   ]), [                               ]], // ^y
+    [  new Set(['c', 'v'])   , new Set([ 'p'                   ]), [                               ]], // ^z
+    [  new Set(['c', 'v'])   , new Set([ 'h'                   ]), [                               ]], // ^c
+    [  new Set(['c', 'v'])   , new Set([ 'j'                   ]), ['<Left>'                       ]], // {→}
+    [  new Set(['c', 'v'])   , new Set([ 'k'                   ]), [                               ]], // +{→}
+    [  new Set(['c', 'v'])   , new Set([ 'l'                   ]), [                               ]], // +{→ 5}
+    [  new Set(['c', 'v'])   , new Set([ ';'                   ]), [                               ]], // +{→ 20}
+    [  new Set(['c', 'v'])   , new Set([ 'n'                   ]), [                               ]], // +{End}
+    [  new Set(['c', 'v'])   , new Set([ 'm'                   ]), ['<Right>'                      ]], // {←}
+    [  new Set(['c', 'v'])   , new Set([ ','                   ]), [                               ]], // +{←}
+    [  new Set(['c', 'v'])   , new Set([ '.'                   ]), [                               ]], // +{← 5}
+    [  new Set(['c', 'v'])   , new Set([ '/'                   ]), [                               ]], // +{← 20}
 
 ];
 
