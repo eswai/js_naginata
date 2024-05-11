@@ -1,6 +1,6 @@
 <script>
     import { ngpress, ngrelease } from "$lib/naginata_v15";
-
+    
     let ngtext = '';
     let lastCharacter = '';
 
@@ -67,8 +67,9 @@
 </script>
 
 <textarea
-    rows="20"
+    rows="5"
     cols="60"
     on:keydown|preventDefault={keyPress}
     on:keyup|preventDefault={keyRelease}
+    placeholder="入力してみよう"
 >{ngtext}</textarea>
