@@ -16,88 +16,88 @@ const ngdic = [
     // [  new Set([' '])        , new Set([ 'y'                   ]), ['<Right>'    ]],
     [  new Set()             , new Set([ ';'                   ]), ['ー'   ]], // ー
     [  new Set([' '])        , new Set([ 'v'                   ]), [ '、'  ]], // 、{Enter}
-    [  new Set()             , new Set([ 'V'                   ]), [ '、'  ]], // 、{Enter}
+    [  new Set()             , new Set([ 'V'                   ]), [ '、'  ]], // 、{Enter} (SandS対策)
     [  new Set([' '])        , new Set([ 'm'                   ]), [ '。'  ]], // 。{Enter}
-    [  new Set()             , new Set([ 'M'                   ]), [ '。'  ]], // 。{Enter}
+    [  new Set()             , new Set([ 'M'                   ]), [ '。'  ]], // 。{Enter} (SandS対策)
 
     [  new Set()             , new Set([ 'j'                   ]), ['あ'   ]], // あ
     [  new Set()             , new Set([ 'k'                   ]), ['い'   ]], // い
     [  new Set()             , new Set([ 'l'                   ]), ['う'   ]], // う
     [  new Set([' '])        , new Set([ 'o'                   ]), ['え'   ]], // え
-    [  new Set()             , new Set([ 'O'                   ]), ['え'   ]], // え
+    [  new Set()             , new Set([ 'O'                   ]), ['え'   ]], // え (SandS対策)
     [  new Set([' '])        , new Set([ 'n'                   ]), ['お'   ]], // お
-    [  new Set()             , new Set([ 'N'                   ]), ['お'   ]], // お
+    [  new Set()             , new Set([ 'N'                   ]), ['お'   ]], // お (SandS対策)
     [  new Set()             , new Set([ 'f'                   ]), ['か'   ]], // か
     [  new Set()             , new Set([ 'w'                   ]), ['き'   ]], // き
     [  new Set()             , new Set([ 'h'                   ]), ['く'   ]], // く
     [  new Set()             , new Set([ 's'                   ]), ['け'   ]], // け
     [  new Set()             , new Set([ 'v'                   ]), ['こ'   ]], // こ
     [  new Set([' '])        , new Set([ 'u'                   ]), ['さ'   ]], // さ
-    [  new Set()             , new Set([ 'U'                   ]), ['さ'   ]], // さ
+    [  new Set()             , new Set([ 'U'                   ]), ['さ'   ]], // さ (SandS対策)
     [  new Set()             , new Set([ 'r'                   ]), ['し'   ]], // し
     [  new Set()             , new Set([ 'o'                   ]), ['す'   ]], // す
     [  new Set([' '])        , new Set([ 'a'                   ]), ['せ'   ]], // せ
-    [  new Set()             , new Set([ 'A'                   ]), ['せ'   ]], // せ
+    [  new Set()             , new Set([ 'A'                   ]), ['せ'   ]], // せ (SandS対策)
     [  new Set()             , new Set([ 'b'                   ]), ['そ'   ]], // そ
     [  new Set()             , new Set([ 'n'                   ]), ['た'   ]], // た
     [  new Set([' '])        , new Set([ 'g'                   ]), ['ち'   ]], // ち
-    [  new Set()             , new Set([ 'G'                   ]), ['ち'   ]], // ち
+    [  new Set()             , new Set([ 'G'                   ]), ['ち'   ]], // ち (SandS対策)
     [  new Set([' '])        , new Set([ 'l'                   ]), ['つ'   ]], // つ
-    [  new Set()             , new Set([ 'L'                   ]), ['つ'   ]], // つ
+    [  new Set()             , new Set([ 'L'                   ]), ['つ'   ]], // つ (SandS対策)
     [  new Set()             , new Set([ 'e'                   ]), ['て'   ]], // て
     [  new Set()             , new Set([ 'd'                   ]), ['と'   ]], // と
     [  new Set()             , new Set([ 'm'                   ]), ['な'   ]], // な
     [  new Set([' '])        , new Set([ 'd'                   ]), ['に'   ]], // に
-    [  new Set()             , new Set([ 'D'                   ]), ['に'   ]], // に
+    [  new Set()             , new Set([ 'D'                   ]), ['に'   ]], // に (SandS対策)
     [  new Set([' '])        , new Set([ 'w'                   ]), ['ぬ'   ]], // ぬ
-    [  new Set()             , new Set([ 'W'                   ]), ['ぬ'   ]], // ぬ
+    [  new Set()             , new Set([ 'W'                   ]), ['ぬ'   ]], // ぬ (SandS対策)
     [  new Set([' '])        , new Set([ 'r'                   ]), ['ね'   ]], // ね
-    [  new Set()             , new Set([ 'R'                   ]), ['ね'   ]], // ね
+    [  new Set()             , new Set([ 'R'                   ]), ['ね'   ]], // ね (SandS対策)
     [  new Set([' '])        , new Set([ 'j'                   ]), ['の'   ]], // の
-    [  new Set()             , new Set([ 'J'                   ]), ['の'   ]], // の
+    [  new Set()             , new Set([ 'J'                   ]), ['の'   ]], // の (SandS対策)
     [  new Set()             , new Set([ 'J'                   ]), ['の'   ]], // の
     [  new Set()             , new Set([ 'c'                   ]), ['は'   ]], // は
     [  new Set()             , new Set([ 'x'                   ]), ['ひ'   ]], // ひ
     [  new Set([' '])        , new Set([ 'x'                   ]), ['ひ'   ]], // ひ
-    [  new Set()             , new Set([ 'X'                   ]), ['ひ'   ]], // ひ
+    [  new Set()             , new Set([ 'X'                   ]), ['ひ'   ]], // ひ (SandS対策)
     [  new Set([' '])        , new Set([ ';'                   ]), ['ふ'   ]], // ふ
-    [  new Set()             , new Set([ ':'                   ]), ['ふ'   ]], // ふ
+    [  new Set()             , new Set([ ':'                   ]), ['ふ'   ]], // ふ (SandS対策)
     [  new Set()             , new Set([ 'p'                   ]), ['へ'   ]], // へ
     [  new Set()             , new Set([ 'z'                   ]), ['ほ'   ]], // ほ
     [  new Set([' '])        , new Set([ 'z'                   ]), ['ほ'   ]], // ほ
-    [  new Set()             , new Set([ 'Z'                   ]), ['ほ'   ]], // ほ
+    [  new Set()             , new Set([ 'Z'                   ]), ['ほ'   ]], // ほ (SandS対策)
     [  new Set([' '])        , new Set([ 'f'                   ]), ['ま'   ]], // ま
-    [  new Set()             , new Set([ 'F'                   ]), ['ま'   ]], // ま
+    [  new Set()             , new Set([ 'F'                   ]), ['ま'   ]], // ま (SandS対策)
     [  new Set([' '])        , new Set([ 'b'                   ]), ['み'   ]], // み
-    [  new Set()             , new Set([ 'B'                   ]), ['み'   ]], // み
+    [  new Set()             , new Set([ 'B'                   ]), ['み'   ]], // み (SandS対策)
     [  new Set([' '])        , new Set([ ','                   ]), ['む'   ]], // む
-    [  new Set()             , new Set([ '<'                   ]), ['む'   ]], // む
+    [  new Set()             , new Set([ '<'                   ]), ['む'   ]], // む (SandS対策)
     [  new Set([' '])        , new Set([ 's'                   ]), ['め'   ]], // め
-    [  new Set()             , new Set([ 'S'                   ]), ['め'   ]], // め
+    [  new Set()             , new Set([ 'S'                   ]), ['め'   ]], // め (SandS対策)
     [  new Set([' '])        , new Set([ 'k'                   ]), ['も'   ]], // も
-    [  new Set()             , new Set([ 'K'                   ]), ['も'   ]], // も
+    [  new Set()             , new Set([ 'K'                   ]), ['も'   ]], // も (SandS対策)
     [  new Set([' '])        , new Set([ 'h'                   ]), ['や'   ]], // や
-    [  new Set()             , new Set([ 'H'                   ]), ['や'   ]], // や
+    [  new Set()             , new Set([ 'H'                   ]), ['や'   ]], // や (SandS対策)
     [  new Set([' '])        , new Set([ 'p'                   ]), ['ゆ'   ]], // ゆ
-    [  new Set()             , new Set([ 'P'                   ]), ['ゆ'   ]], // ゆ
+    [  new Set()             , new Set([ 'P'                   ]), ['ゆ'   ]], // ゆ (SandS対策)
     [  new Set([' '])        , new Set([ 'i'                   ]), ['よ'   ]], // よ
-    [  new Set()             , new Set([ 'I'                   ]), ['よ'   ]], // よ
+    [  new Set()             , new Set([ 'I'                   ]), ['よ'   ]], // よ (SandS対策)
     [  new Set()             , new Set([ '.'                   ]), ['ら'   ]], // ら
     [  new Set([' '])        , new Set([ 'e'                   ]), ['り'   ]], // り
-    [  new Set()             , new Set([ 'E'                   ]), ['り'   ]], // り
+    [  new Set()             , new Set([ 'E'                   ]), ['り'   ]], // り (SandS対策)
     [  new Set()             , new Set([ 'i'                   ]), ['る'   ]], // る
     [  new Set()             , new Set([ '/'                   ]), ['れ'   ]], // れ
     [  new Set([' '])        , new Set([ '/'                   ]), ['れ'   ]], // れ
-    [  new Set()             , new Set([ '?'                   ]), ['れ'   ]], // れ
+    [  new Set()             , new Set([ '?'                   ]), ['れ'   ]], // れ (SandS対策)
     [  new Set()             , new Set([ 'a'                   ]), ['ろ'   ]], // ろ
     [  new Set([' '])        , new Set([ '.'                   ]), ['わ'   ]], // わ
-    [  new Set()             , new Set([ '>'                   ]), ['わ'   ]], // わ
+    [  new Set()             , new Set([ '>'                   ]), ['わ'   ]], // わ (SandS対策)
     [  new Set([' '])        , new Set([ 'c'                   ]), ['を'   ]], // を
-    [  new Set()             , new Set([ 'C'                   ]), ['を'   ]], // を
+    [  new Set()             , new Set([ 'C'                   ]), ['を'   ]], // を (SandS対策)
     [  new Set()             , new Set([ ','                   ]), ['ん'   ]], // ん
     [  new Set()             , new Set([ 'q'                   ]), ['ゔ'   ]], // ゔ
     [  new Set([' '])        , new Set([ 'q'                   ]), ['ゔ'   ]], // ゔ
-    [  new Set()             , new Set([ 'Q'                   ]), ['ゔ'   ]], // ゔ
+    [  new Set()             , new Set([ 'Q'                   ]), ['ゔ'   ]], // ゔ (SandS対策)
     [  new Set()             , new Set([ 'j', 'f'              ]), ['が'   ]], // が
     [  new Set()             , new Set([ 'j', 'w'              ]), ['ぎ'   ]], // ぎ
     [  new Set()             , new Set([ 'f', 'h'              ]), ['ぐ'   ]], // ぐ
