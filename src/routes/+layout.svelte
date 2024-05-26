@@ -11,27 +11,27 @@
 		▶︎レッスン2
 	</a>
 
-	<a href="/lesson2">
+	<a href="/lesson3">
 		▶︎レッスン3
 	</a>
 
-	<a href="/lesson2">
+	<a href="/lesson4">
 		▶︎レッスン4
 	</a>
 
-	<a href="/lesson2">
+	<a href="/lesson5">
 		▶︎レッスン5
 	</a>
 
-	<a href="/lesson2">
+	<a href="/lesson6">
 		▶︎レッスン6
 	</a>
 
-	<a href="/lesson2">
+	<a href="/lesson7">
 		▶︎レッスン7
 	</a>
 
-	<a href="/lesson2">
+	<a href="/lesson8">
 		▶︎レッスン8
 	</a>
 
