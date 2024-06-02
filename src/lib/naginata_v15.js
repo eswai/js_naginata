@@ -2,14 +2,16 @@ let pressed_keys = new Set(); // 同時に押しているキー
 let nginput = [];  // 未変換のキー [[KC.NGM], [KC.NGJ, KC.NGW]] (なぎ)のように、同時押しの組み合わせを2次元配列へ格納
 
 const mask_keys = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'm', 'l', ';', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/', ' ',
-    'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'M', 'L', ':', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<', '>', '?', ];
+    'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'M', 'L', ':', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<', '>', '?', 'Enter', 'Backspace'];
 
 // かな変換テーブル setはdictionaryのキーにできないので配列に
 const ngdic = [
     //  前置シフト      同時押し                        かな
     [  new Set()             , new Set([ 'u'                   ]), ['<Backspace>']],
+    [  new Set()             , new Set([ 'Backspace'           ]), ['<Backspace>']],
     [  new Set()             , new Set([ ' '                   ]), ['　'          ]],
     [  new Set()             , new Set([ 'm', 'v'              ]), ['\n'         ]],
+    [  new Set()             , new Set([ 'Enter'               ]), ['\n'         ]],
     [  new Set()             , new Set([ 't'                   ]), ['<Left>'     ]],
     [  new Set()             , new Set([ 'y'                   ]), ['<Right>'    ]],
     // [  new Set([' '])        , new Set([ 't'                   ]), ['<Left>'     ]],
