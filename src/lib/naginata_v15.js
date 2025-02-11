@@ -351,15 +351,17 @@ function ngrelease(keycode) {
     pressed_keys.delete(keycode);
 
     // 全部キーを離したらバッファを全部吐き出す
+    let r = [];
     if (pressed_keys.size == 0) {
-        let r = [];
         while (nginput.length > 0) {
             r = r.concat(ngtype(nginput.shift()));
         }
-        return r;
+    } else {
+        nginput.push([]);
+        r = ngtype(nginput.shift());
     }
 
-    return '';
+    return r;
 }
 
 function ngtype(keys) {
