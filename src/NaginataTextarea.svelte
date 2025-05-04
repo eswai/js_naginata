@@ -1,5 +1,5 @@
 <script>
-    import { ngpress, ngrelease } from "$lib/naginata_v15";
+    import { ngpress, ngrelease } from "$lib/naginata_v16";
     
     export let autofocus = false;
     let ngtext = '';
