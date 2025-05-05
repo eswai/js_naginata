@@ -21,7 +21,7 @@
 
 <ul>
   <li><a href="http://oookaworks.seesaa.net/article/456099128.html" target="_blank">カナ配列 【薙刀式】</a></li>
-  <li><a href="https://oookaworks.up.seesaa.net/image/E89699E58880E5BC8Fv15fixE78988E3839EE3838BE383A5E382A2E383AB.pdf" target="_blank">薙刀式v15fix版マニュアル.pdf</a></li>
+  <li><a href="https://oookaworks.up.seesaa.net/image/E89699E58880E5BC8Fv16E5BFABE9809FE78988E3839EE3838BE383A5E382A2E383AB.pdf" target="_blank">薙刀式v16快速版マニュアル.pdf</a></li>
 </ul>
 
 <img src="naginata.png" width="600">
