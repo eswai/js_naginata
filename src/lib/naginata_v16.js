@@ -120,7 +120,7 @@ const ngdic = [
     [  new Set()             , new Set([ 'f', ';'              ]), ['ぶ'   ]], // ぶ
     [  new Set()             , new Set([ 'f', 'p'              ]), ['べ'   ]], // べ
     [  new Set()             , new Set([ 'j', 'z'              ]), ['ぼ'   ]], // ぼ
-    [  new Set()             , new Set([ 'f', 'l'              ]), ['ゔ'   ]], // ゔ
+    [  new Set()             , new Set([ 'f', 'l', ';'         ]), ['ゔ'   ]], // ゔ
     [  new Set()             , new Set([ 'm', 'c'              ]), ['ぱ'   ]], // ぱ
     [  new Set()             , new Set([ 'm', 'x'              ]), ['ぴ'   ]], // ぴ
     [  new Set()             , new Set([ 'v', ';'              ]), ['ぷ'   ]], // ぷ
@@ -193,11 +193,11 @@ const ngdic = [
     [  new Set()             , new Set([ 'v', 'l', 'k'         ]), ['うぃ' ]], // うぃ
     [  new Set()             , new Set([ 'v', 'l', 'o'         ]), ['うぇ' ]], // うぇ
     [  new Set()             , new Set([ 'v', 'l', 'n'         ]), ['うぉ' ]], // うぉ
-    [  new Set()             , new Set([ 'm', 'q', 'j'         ]), ['ゔぁ' ]], // ゔぁ
-    [  new Set()             , new Set([ 'm', 'q', 'k'         ]), ['ゔぃ' ]], // ゔぃ
-    [  new Set()             , new Set([ 'm', 'q', 'o'         ]), ['ゔぇ' ]], // ゔぇ
-    [  new Set()             , new Set([ 'm', 'q', 'n'         ]), ['ゔぉ' ]], // ゔぉ
-    [  new Set()             , new Set([ 'm', 'q', 'p'         ]), ['ゔゅ' ]], // ゔゅ
+    [  new Set()             , new Set([ 'f', 'l', 'j'         ]), ['ゔぁ' ]], // ゔぁ
+    [  new Set()             , new Set([ 'f', 'l', 'k'         ]), ['ゔぃ' ]], // ゔぃ
+    [  new Set()             , new Set([ 'f', 'l', 'o'         ]), ['ゔぇ' ]], // ゔぇ
+    [  new Set()             , new Set([ 'f', 'l', 'n'         ]), ['ゔぉ' ]], // ゔぉ
+    [  new Set()             , new Set([ 'f', 'l', 'p'         ]), ['ゔゅ' ]], // ゔゅ
     [  new Set()             , new Set([ 'v', 'h', 'j'         ]), ['くぁ' ]], // くぁ
     [  new Set()             , new Set([ 'v', 'h', 'k'         ]), ['くぃ' ]], // くぃ
     [  new Set()             , new Set([ 'v', 'h', 'o'         ]), ['くぇ' ]], // くぇ
