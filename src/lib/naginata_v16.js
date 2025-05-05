@@ -97,9 +97,6 @@ const ngdic = [
     [  new Set([' '])        , new Set([ 'c'                   ]), ['を'   ]], // を
     [  new Set()             , new Set([ 'C'                   ]), ['を'   ]], // を (SandS対策)
     [  new Set()             , new Set([ ','                   ]), ['ん'   ]], // ん
-    [  new Set()             , new Set([ 'q'                   ]), ['ゔ'   ]], // ゔ
-    [  new Set([' '])        , new Set([ 'q'                   ]), ['ゔ'   ]], // ゔ
-    [  new Set()             , new Set([ 'Q'                   ]), ['ゔ'   ]], // ゔ (SandS対策)
     [  new Set()             , new Set([ 'j', 'f'              ]), ['が'   ]], // が
     [  new Set()             , new Set([ 'j', 'w'              ]), ['ぎ'   ]], // ぎ
     [  new Set()             , new Set([ 'f', 'h'              ]), ['ぐ'   ]], // ぐ
