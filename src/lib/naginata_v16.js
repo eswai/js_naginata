@@ -353,8 +353,9 @@ function ngrelease(keycode) {
             r = r.concat(ngtype(nginput.shift()));
         }
     } else {
-        nginput.push([]);
-        r = ngtype(nginput.shift());
+        if (nginput.length > 0 && number_of_candidates(nginput[0]) == 1) {
+            r = ngtype(nginput.shift());
+        }
     }
 
     return r;
