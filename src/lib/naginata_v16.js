@@ -165,9 +165,9 @@ const ngdic = [
     [  new Set()             , new Set([ 'm', 'x', 'h'         ]), ['ぴゃ' ]], // ぴゃ
     [  new Set()             , new Set([ 'm', 'x', 'p'         ]), ['ぴゅ' ]], // ぴゅ
     [  new Set()             , new Set([ 'm', 'x', 'i'         ]), ['ぴょ' ]], // ぴょ
-    [  new Set()             , new Set([ 'b', 'h'              ]), ['みゃ' ]], // みゃ
-    [  new Set()             , new Set([ 'b', 'p'              ]), ['みゅ' ]], // みゅ
-    [  new Set()             , new Set([ 'b', 'i'              ]), ['みょ' ]], // みょ
+    [  new Set()             , new Set([ 's', 'h'              ]), ['みゃ' ]], // みゃ
+    [  new Set()             , new Set([ 's', 'p'              ]), ['みゅ' ]], // みゅ
+    [  new Set()             , new Set([ 's', 'i'              ]), ['みょ' ]], // みょ
     [  new Set()             , new Set([ 'e', 'h'              ]), ['りゃ' ]], // りゃ
     [  new Set()             , new Set([ 'e', 'p'              ]), ['りゅ' ]], // りゅ
     [  new Set()             , new Set([ 'e', 'i'              ]), ['りょ' ]], // りょ
